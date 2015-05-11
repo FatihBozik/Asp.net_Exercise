@@ -1,7 +1,8 @@
 #WebSite3
 
-Asp.net Menü kullanımı
+Asp.net Menü kullanımı <br/><br/>
 
+Anasayfa.aspx
 ```html
 <form id="form1" runat="server">
     <div>
@@ -29,4 +30,19 @@ Asp.net Menü kullanımı
         <StaticSelectedStyle BackColor="#507CD1" />
     </asp:Menu>
     </form>
+```
+<br/> <br/>
+
+Web.sitemap
+```html
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="anasayfa.aspx" title="anasayfa"  description="anasayfa">
+    <siteMapNode url="sayfa1.aspx" title="sayfa1"  description="sayfa1" >
+      <siteMapNode url="sayfa2.aspx" title="sayfa2"  description="sayfa2" />
+      <siteMapNode url="sayfa3.aspx" title="sayfa3"  description="sayfa3" />
+    </siteMapNode>
+    <siteMapNode url="sayfa4.aspx" title="sayfa4"  description="sayfa4" />
+  </siteMapNode>
+</siteMap>
 ```
